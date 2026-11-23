@@ -13,9 +13,8 @@
 
 # --- 2. Load data ------------------------------------------------------------
 if (!file.exists("data/by_region.rds")) {
-  stop("data/by_region.rds not found. Run data_management.R first.")
+  source("data_management.R")
 }
-by_region <- readRDS("data/by_region.rds")
 
 suppressPackageStartupMessages({
   library(shiny)
